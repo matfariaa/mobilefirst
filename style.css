@@ -1,0 +1,191 @@
+:root {
+    --fonte-primaria: "Montserrat", sans-serif;
+    --branco: #FFFFFF;
+    --titulo-color: #464646;
+    --texto-color: #A3A3A3;
+    --cor-de-fundo: #F8F4FF;
+    --cor-borda-card-botao: #ECECEC;
+    --cor-botao-video: #FFB050;
+    --cor-botao-endereço: #4894FF;
+    --cor-borda-chat: #F6F6F6;
+}
+
+body {
+    margin: 0;
+    font-family: var(--fonte-primaria);
+    background-color: var(--cor-de-fundo);
+}
+
+.status-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--branco);
+    padding: 5px 12px;
+    font-size: 14px;
+    font-weight: 400;
+    height: 33px;
+}
+
+.usuario {
+    background-color: var(--cor-de-fundo);
+    padding: 28px 20px 16px 20px;
+}
+
+.perfil-usuario {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.imagem-usuario {
+    width: 57px;
+    height: 57px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.container-usuario {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.titulo-usuario {
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--titulo-color);
+    margin: 0;
+    line-height: 1.2;
+}
+
+.texto-usuario {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--texto-color);
+    margin-top: 4px;
+}
+
+.consultas {
+    background-color: var(--cor-de-fundo);
+    padding: 0 20px 20px 20px;
+}
+
+.subtitulo-consultas{
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--titulo-color);
+    margin: 0 0 16px 0;
+}
+
+.card-consultas {
+    background-color: var(--branco);
+    border-radius: 12px;
+    box-shadow: var(--cor-borda-card-botao);
+    padding: 16px;
+    margin-bottom: 16px;
+}
+
+.cabeçalho-consultas {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+    padding-bottom: 14px;
+}
+
+.chat-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;                         
+  height: 44px;
+  padding: 8px;
+  border-radius: 50%;
+  border: none;
+}            
+
+.perfil-consultas {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.imagem-consultas {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.nome-consultas {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--titulo-color);
+    margin: 0;
+}
+
+.tipo-consultas {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--texto-color);
+    margin: 4px 0 0 0;
+}
+
+.icone-camera-consultas {
+  width: 16px;
+  height: 16px;
+}
+
+.icone-chat-consultas {
+  width: 20px;
+  height: 20px;
+  display: block;
+}
+
+.horario-consultas {
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--titulo-color);
+  margin: 0 0 14px 0;
+}
+
+.botoes-consultas {
+  display: flex;
+  gap: 8px;
+}
+
+.botao {
+  flex: 1;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 12px 0;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.botao-video {
+  background-color: var(--cor-botao-video);
+  color: var(--branco);
+}
+
+.botao-audio {
+  background-color: var(--branco);
+  border: 1px solid var(--cor-borda-card-botao);
+  color: var(--titulo-color);
+}
+
+.botao:hover {
+    opacity: 0.9;
+}
+
+.botao-endereço {
+    background-color: var(--cor-botao-endereço);
+    color: var(--branco);
+}
+
